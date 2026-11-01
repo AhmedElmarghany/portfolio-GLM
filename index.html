@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Elmarghany — Software Engineer · Frontend · UI/UX</title>
+  <meta name="description" content="Portfolio of Ahmed Elmarghany — a software engineer focused on frontend development with React, Next.js and TypeScript, with full-stack experience and a designer's approach to building interfaces." />
+  <meta property="og:title" content="Ahmed Elmarghany — Software Engineer · Frontend · UI/UX" />
+  <meta property="og:description" content="Building thoughtful digital experiences through code and design." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#161513" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23161513'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23ECE7DE' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahmed Elmarghany",
+    "jobTitle": "Software Engineer",
+    "email": "mailto:ahmedelmarghany01@gmail.com",
+    "sameAs": [
+      "https://github.com/AhmedElmarghany",
+      "https://www.linkedin.com/in/AhmedElmarghany"
+    ],
+    "knowsAbout": ["Frontend Development", "UI/UX Design", "React", "Next.js", "Django", "TypeScript"],
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Faculty of Engineering, Mansoura University" }
+  }
+  </script>
+</head>
+<body>
+  <!-- Ambient background: soft, static color fields that glass surfaces blur over -->
+  <div class="ambient" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header glass" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#top">Ahmed<span class="brand__dot">.</span></a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#work">Work</a>
+        <a class="nav__link" href="#design">Design</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#journey">Journey</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/>
+          </svg>
+        </button>
+        <a class="btn btn--ghost btn--sm nav__cv" href="assets/Ahmed-Elmarghany-CV.pdf" download>CV</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobilePanel" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation panel -->
+  <div class="mobile-panel" id="mobilePanel" hidden>
+    <nav class="mobile-panel__nav" aria-label="Mobile">
+      <a class="mobile-panel__link" href="#about">About</a>
+      <a class="mobile-panel__link" href="#work">Work</a>
+      <a class="mobile-panel__link" href="#design">Design</a>
+      <a class="mobile-panel__link" href="#skills">Skills</a>
+      <a class="mobile-panel__link" href="#journey">Journey</a>
+      <a class="mobile-panel__link" href="#contact">Contact</a>
+    </nav>
+    <div class="mobile-panel__foot">
+      <a href="mailto:ahmedelmarghany01@gmail.com">ahmedelmarghany01@gmail.com</a>
+      <div class="mobile-panel__foot-row">
+        <a href="https://github.com/AhmedElmarghany" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/AhmedElmarghany" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/Ahmed-Elmarghany-CV.pdf" download>CV ↓</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <p class="eyebrow" data-reveal>Software Engineer · Frontend Developer · UI/UX Designer</p>
+
+        <h1 class="hero__title" data-reveal style="--d:.08s">
+          Building <em>thoughtful</em> digital experiences — through code <span class="amp">&amp;</span> design.
+        </h1>
+
+        <div class="hero__row">
+          <p class="hero__lede" data-reveal style="--d:.16s">
+            I'm Ahmed — a software engineer who works at the intersection of frontend
+            engineering and interface design, building responsive, accessible products,
+            wiring them to real backends, and shaping how they look and feel along the way.
+          </p>
+          <div class="hero__cta" data-reveal style="--d:.24s">
+            <a class="btn btn--solid" href="#work">View selected work</a>
+            <a class="btn btn--ghost" href="assets/Ahmed-Elmarghany-CV.pdf" download>Download CV<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 21h16"/></svg></a>
+          </div>
+        </div>
+
+        <dl class="hero__meta" data-reveal style="--d:.32s">
+          <div class="hero__meta-item">
+            <dt>GitHub</dt>
+            <dd><a class="meta-link" href="https://github.com/AhmedElmarghany" target="_blank" rel="noopener">AhmedElmarghany</a></dd>
+          </div>
+          <div class="hero__meta-item">
+            <dt>Education</dt>
+            <dd>B.Sc. Computers &amp; Systems Engineering<br/>Mansoura University — Class of 2025</dd>
+          </div>
+          <div class="hero__meta-item">
+            <dt>Focused on</dt>
+            <dd>React, Next.js, TypeScript,<br/>responsive &amp; performant interfaces</dd>
+          </div>
+          <div class="hero__meta-item">
+            <dt>Based in</dt>
+            <dd>Egypt · open to remote</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="scroll-cue container" aria-hidden="true"><span>Scroll</span><i></i></div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span>01</span> — About</p>
+          <h2 class="section__title">Engineering rigor,<br /><em>designer's judgment.</em></h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__text" data-reveal>
+            <p>
+              I studied <strong>Computers &amp; Systems Engineering</strong> at the Faculty of
+              Engineering, Mansoura University, graduating in <strong>July 2025</strong>. Control
+              systems teach you to think in feedback loops — inputs, outputs, and what happens
+              in between. It turns out that's a useful way to think about software products too.
+            </p>
+            <p>
+              Along the way I gravitated toward the part of engineering people actually see: the
+              interface. I learned to build with <strong>React, Next.js, and TypeScript</strong>,
+              then kept going deeper on both sides — Node.js and Django on the backend — because
+              understanding the whole stack makes you better at designing the part users touch.
+            </p>
+            <p>
+              I also work professionally on a real enterprise web application built with
+              Django: redesigning existing interfaces, implementing features, and improving
+              usability inside a codebase I didn't create. It's taught me as much about software
+              as any greenfield project ever could — how to work within constraints, respect
+              existing patterns, and still raise the bar.
+            </p>
+
+            <blockquote class="pull">
+              Usability, aesthetics, and maintainability aren't competing goals —
+              they're the same goal, seen from different sides.
+            </blockquote>
+
+            <p>
+              I've worked in teams and led one — coordinating a graduation project from planning
+              through delivery — and I care about the unglamorous parts: clear communication,
+              code other people can read, and designs that hold up under real content.
+            </p>
+          </div>
+
+          <aside class="about__aside" data-reveal style="--d:.12s">
+            <dl class="facts glass-panelflat">
+              <div class="fact"><dt>Degree</dt><dd>B.Sc. Computers &amp; Systems Engineering</dd></div>
+              <div class="fact"><dt>Graduated</dt><dd>July 2025 — Mansoura University</dd></div>
+              <div class="fact"><dt>Languages</dt><dd>Arabic (native) · English (conversational)</dd></div>
+              <div class="fact"><dt>Also comfortable with</dt><dd>Node.js, NestJS, Django, GraphQL, REST APIs</dd></div>
+              <div class="fact"><dt>Working style</dt><dd>Design the interaction first, then implement — the same person both ways</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span>02</span> — Selected work</p>
+          <h2 class="section__title">Projects, treated<br /><em>as products.</em></h2>
+          <p class="section__intro">
+            Four self-driven and team builds — a platform, a full-stack auth system, a CRM, and
+            a bilingual landing page. Below them, my current professional work as a sanitized
+            case study.
+          </p>
+        </header>
+
+        <div class="cards">
+          <!-- P·01 Reelio -->
+          <article class="p-card glass-panelflat" data-reveal>
+            <a class="p-card__media" href="https://github.com/AhmedElmarghany/Reelio" target="_blank" rel="noopener" aria-label="Open the Reelio repository">
+              <img src="assets/reelio.png" alt="Reelio interface — dark social movie review platform with poster grid" width="1899" height="868" loading="lazy" decoding="async" />
+            </a>
+            <div class="p-card__body">
+              <div class="p-card__meta">
+                <span class="project__index">P·01</span>
+                <span class="p-card__type">Team project — team lead &amp; frontend</span>
+              </div>
+              <h3 class="p-card__title">Reelio</h3>
+              <p class="p-card__tagline">Social movie review platform, inspired by Letterboxd.</p>
+              <p class="p-card__desc">
+                As team lead I organized the development workflow and helped shape the
+                architecture, building a reusable component system with shadcn/ui and integrating
+                the TMDB API with Redux Toolkit + RTK Query for efficient, cached state.
+              </p>
+              <ul class="p-card__features">
+                <li>Authentication &amp; user sessions</li>
+                <li>Movie discovery &amp; search via TMDB</li>
+                <li>Reviews, ratings &amp; social posts</li>
+                <li>Follows, bookmarks &amp; collections</li>
+                <li>Form validation with React Hook Form + Zod</li>
+                <li>Media uploads with UploadThing</li>
+              </ul>
+              <ul class="stack-list"><li>Next.js</li><li>TypeScript</li><li>React</li><li>Tailwind CSS</li><li>Redux Toolkit</li><li>RTK Query</li><li>shadcn/ui</li></ul>
+              <div class="project__links">
+                <a class="link-arrow" href="https://github.com/AhmedElmarghany/Reelio" target="_blank" rel="noopener">View source<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10 10 2M4 2h6v6"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- P·02 AuthCore -->
+          <article class="p-card glass-panelflat" data-reveal style="--d:.06s">
+            <a class="p-card__media" href="https://authcore-app.netlify.app" target="_blank" rel="noopener" aria-label="Open the AuthCore live demo">
+              <img src="assets/authcore.png" alt="AuthCore interface — authentication landing screen with form panel" width="1920" height="869" loading="lazy" decoding="async" />
+            </a>
+            <div class="p-card__body">
+              <div class="p-card__meta">
+                <span class="project__index">P·02</span>
+                <span class="p-card__type">Personal project — full stack</span>
+              </div>
+              <h3 class="p-card__title">AuthCore</h3>
+              <p class="p-card__tagline">A full-stack authentication system — built to understand auth, not just use it.</p>
+              <p class="p-card__desc">
+                Secure user management end-to-end: registration, login, logout and account
+                deletion on a JWT-based flow with bcrypt hashing, consumed by a React frontend
+                through RTK Query and protected React Router routes — plus i18next multilingual
+                support.
+              </p>
+              <ul class="p-card__features">
+                <li>JWT auth: register, login, logout, delete</li>
+                <li>Password hashing with bcrypt</li>
+                <li>Protected routes (React Router)</li>
+                <li>API state via RTK Query</li>
+                <li>Multilingual UI with i18next</li>
+                <li>Express + MongoDB backend</li>
+              </ul>
+              <ul class="stack-list"><li>React</li><li>Redux Toolkit / RTK Query</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>JWT</li><li>bcrypt</li><li>i18next</li></ul>
+              <div class="project__links">
+                <a class="link-arrow" href="https://github.com/AhmedElmarghany/authentication-system" target="_blank" rel="noopener">Source<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10 10 2M4 2h6v6"/></svg></a>
+                <a class="link-arrow" href="https://authcore-app.netlify.app" target="_blank" rel="noopener">Live demo<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10 10 2M4 2h6v6"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- P·03 Focus-CRM -->
+          <article class="p-card glass-panelflat" data-reveal style="--d:.10s">
+            <a class="p-card__media" href="https://ahmedelmarghany.pythonanywhere.com" target="_blank" rel="noopener" aria-label="Open the Focus-CRM live demo">
+              <img src="assets/focus-crm.png" alt="Focus-CRM interface — light CRM landing page" width="1914" height="1111" loading="lazy" decoding="async" />
+            </a>
+            <div class="p-card__body">
+              <div class="p-card__meta">
+                <span class="project__index">P·03</span>
+                <span class="p-card__type">Web application — full stack</span>
+              </div>
+              <h3 class="p-card__title">Focus-CRM</h3>
+              <p class="p-card__tagline">A customer manager — Django, front to back.</p>
+              <p class="p-card__desc">
+                A responsive CRM focused on clean UI: authenticated, access-controlled users
+                manage records through complete CRUD workflows with integrated search and a
+                working EmailJS contact form.
+              </p>
+              <ul class="p-card__features">
+                <li>Authentication &amp; access control</li>
+                <li>Complete CRUD operations</li>
+                <li>Integrated record search</li>
+                <li>Contact form via EmailJS</li>
+                <li>Responsive, clean UI focus</li>
+              </ul>
+              <ul class="stack-list"><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>JavaScript</li><li>Django</li><li>EmailJS</li></ul>
+              <div class="project__links">
+                <a class="link-arrow" href="https://github.com/AhmedElmarghany/Focus-CRM" target="_blank" rel="noopener">Source<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10 10 2M4 2h6v6"/></svg></a>
+                <a class="link-arrow" href="https://ahmedelmarghany.pythonanywhere.com" target="_blank" rel="noopener">Live demo<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10 10 2M4 2h6v6"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- P·04 Kalima -->
+          <article class="p-card glass-panelflat" data-reveal style="--d:.14s">
+            <a class="p-card__media" href="https://ahmedelmarghany.github.io/kalima-translation-landing-page/?lang=en" target="_blank" rel="noopener" aria-label="Open the Kalima landing page">
+              <img src="assets/kalima.png" alt="Kalima interface — bilingual translation agency landing page with globe" width="1905" height="867" loading="lazy" decoding="async" />
+            </a>
+            <div class="p-card__body">
+              <div class="p-card__meta">
+                <span class="project__index">P·04</span>
+                <span class="p-card__type">Personal project — landing page</span>
+              </div>
+              <h3 class="p-card__title">Kalima</h3>
+              <p class="p-card__tagline">Bilingual landing page for a translation agency.</p>
+              <p class="p-card__desc">
+                A responsive landing page supporting bilingual layouts with localized assets,
+                built with modular code and SEO-friendly URL handling, plus an EmailJS-powered
+                contact form.
+              </p>
+              <ul class="p-card__features">
+                <li>Bilingual layouts &amp; localized assets</li>
+                <li>Responsive across breakpoints</li>
+                <li>SEO-friendly URL handling</li>
+                <li>Contact form via EmailJS</li>
+              </ul>
+              <ul class="stack-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>EmailJS</li></ul>
+              <div class="project__links">
+                <a class="link-arrow" href="https://github.com/AhmedElmarghany/kalima-translation-landing-page" target="_blank" rel="noopener">Source<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10 10 2M4 2h6v6"/></svg></a>
+                <a class="link-arrow" href="https://ahmedelmarghany.github.io/kalima-translation-landing-page/?lang=en" target="_blank" rel="noopener">Live demo<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10 10 2M4 2h6v6"/></svg></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Professional case study -->
+        <article class="case glass-panelflat" data-reveal>
+          <div class="case__tagrow">
+            <p class="case__tag">Professional experience — sanitized case study</p>
+            <ul class="stack-list"><li>Django templates</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>jQuery</li><li>Bootstrap</li></ul>
+          </div>
+          <div class="case__main">
+            <div class="case__intro">
+              <h3 class="case__title">Redesigning an enterprise translation-management platform</h3>
+              <p class="case__desc">
+                My current professional work: improving the frontend of a live enterprise
+                application built on Django with a legacy JavaScript/jQuery codebase. Client and
+                proprietary details are withheld — what follows is the nature of the work, the
+                problems tackled, and how I approach them.
+              </p>
+              <p class="case__note">
+                No metrics or business figures are quoted here — the honest, complete story of
+                this work belongs in a conversation, not on a banner.
+              </p>
+            </div>
+            <div class="case__cols">
+              <div class="case__col">
+                <h4>The work</h4>
+                <ul class="scope-list">
+                  <li>Redesigning interfaces for usability &amp; consistency — navigation, sidebars, profile and availability flows</li>
+                  <li>Reworking data-heavy tables with advanced filters and customizable columns</li>
+                  <li>Refining search behavior, feedback messages, modals, popovers and notifications</li>
+                  <li>Improving responsive behavior across the application</li>
+                </ul>
+              </div>
+              <div class="case__col">
+                <h4>How I approach legacy</h4>
+                <ul class="scope-list">
+                  <li>Audit existing screens and patterns before proposing changes</li>
+                  <li>Refactor existing jQuery functionality carefully, preserving behavior</li>
+                  <li>Introduce consistent components instead of one-off fixes</li>
+                  <li>Design within the stack that exists — Django templates, not a rewrite</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= UI/UX SHOWCASE ================= -->
+    <section class="section section--tinted" id="design">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span>03</span> — Design work</p>
+          <h2 class="section__title">Design is a process,<br /><em>not a tool.</em></h2>
+          <p class="section__intro">
+            A selection of interface thinking — layout systems, data tables, forms, navigation,
+            and the redesign patterns I work with professionally. Unless a tile says otherwise,
+            these are <strong>illustrative concept mockups made for this portfolio</strong>, not shipped client work.
+          </p>
+        </header>
+
+        <div class="tiles">
+          <!-- Tile 1: Dashboard concept -->
+          <figure class="tile glass-panelflat" data-reveal>
+            <svg viewBox="0 0 560 300" role="img" aria-label="Dashboard concept mockup">
+              <title>Illustrative dashboard concept mockup</title>
+              <rect x="0" y="0" width="560" height="300" class="tf"/>
+              <rect x="24" y="24" width="96" height="12" rx="5" class="ti"/>
+              <!-- KPI row -->
+              <rect x="24" y="56" width="160" height="72" rx="10" class="tcard"/>
+              <rect x="38" y="70" width="56" height="7" rx="3" class="ts"/>
+              <rect x="38" y="88" width="64" height="14" rx="5" class="ti"/>
+              <rect x="38" y="110" width="40" height="6" rx="3" class="taccent"/>
+              <rect x="200" y="56" width="160" height="72" rx="10" class="tcard"/>
+              <rect x="214" y="70" width="56" height="7" rx="3" class="ts"/>
+              <rect x="214" y="88" width="64" height="14" rx="5" class="ti"/>
+              <rect x="214" y="110" width="40" height="6" rx="3" class="ts"/>
+              <rect x="376" y="56" width="160" height="72" rx="10" class="tcard"/>
+              <rect x="390" y="70" width="56" height="7" rx="3" class="ts"/>
+              <rect x="390" y="88" width="64" height="14" rx="5" class="ti"/>
+              <rect x="390" y="110" width="40" height="6" rx="3" class="ts"/>
+              <!-- chart -->
+              <rect x="24" y="148" width="336" height="128" rx="10" class="tcard"/>
+              <rect x="40" y="162" width="70" height="7" rx="3" class="ti"/>
+              <g>
+                <rect x="46"  y="212" width="22" height="44" rx="3" class="ts2"/>
+                <rect x="80"  y="200" width="22" height="56" rx="3" class="ts2"/>
+                <rect x="114" y="220" width="22" height="36" rx="3" class="ts2"/>
+                <rect x="148" y="188" width="22" height="68" rx="3" class="ts2"/>
+                <rect x="182" y="196" width="22" height="60" rx="3" class="taccent"/>
+                <rect x="216" y="176" width="22" height="80" rx="3" class="ts2"/>
+                <rect x="250" y="204" width="22" height="52" rx="3" class="ts2"/>
+                <rect x="284" y="184" width="22" height="72" rx="3" class="ts2"/>
+              </g>
+              <!-- side panel -->
+              <rect x="376" y="148" width="160" height="128" rx="10" class="tcard"/>
+              <circle cx="398" cy="176" r="8" class="taccent"/>
+              <rect x="414" y="168" width="70" height="6" rx="3" class="ti"/>
+              <rect x="414" y="180" width="50" height="5" rx="2.5" class="ts"/>
+              <circle cx="398" cy="210" r="8" class="ts2"/>
+              <rect x="414" y="202" width="80" height="6" rx="3" class="ti"/>
+              <rect x="414" y="214" width="44" height="5" rx="2.5" class="ts"/>
+              <circle cx="398" cy="244" r="8" class="ts2"/>
+              <rect x="414" y="236" width="64" height="6" rx="3" class="ti"/>
+              <rect x="414" y="248" width="52" height="5" rx="2.5" class="ts"/>
+            </svg>
+            <figcaption class="tile__caption">
+              <strong>Dashboard concepts</strong>
+              <span>Problem: admin screens collapse into noise when every metric shouts. This concept picks
+              one visual voice — a restrained KPI row, a single accent for the number that matters today,
+              and activity as a quiet list rather than a wall of cards.</span>
+            </figcaption>
+          </figure>
+
+          <!-- Tile 2: Data table -->
+          <figure class="tile glass-panelflat" data-reveal>
+            <svg viewBox="0 0 400 280" role="img" aria-label="Data table design mockup">
+              <title>Illustrative data-table design mockup</title>
+              <rect x="0" y="0" width="400" height="280" class="tf"/>
+              <!-- toolbar -->
+              <rect x="20" y="20" width="120" height="22" rx="11" class="tcard"/>
+              <circle cx="34" cy="31" r="5" class="ts"/>
+              <rect x="44" y="28" width="60" height="6" rx="3" class="ts"/>
+              <rect x="148" y="20" width="62" height="22" rx="11" class="tfilter"/>
+              <rect x="160" y="28" width="38" height="6" rx="3" class="ti"/>
+              <rect x="216" y="20" width="62" height="22" rx="11" class="tfilter"/>
+              <rect x="228" y="28" width="38" height="6" rx="3" class="ti"/>
+              <!-- column settings affordance -->
+              <rect x="330" y="20" width="50" height="22" rx="11" class="tcard"/>
+              <rect x="342" y="28" width="26" height="6" rx="3" class="ts"/>
+              <!-- header -->
+              <line x1="20" y1="66" x2="380" y2="66" class="tl"/>
+              <rect x="20" y="50" width="54" height="7" rx="3" class="ti"/>
+              <rect x="150" y="50" width="44" height="7" rx="3" class="ts"/>
+              <rect x="230" y="50" width="44" height="7" rx="3" class="ts"/>
+              <rect x="330" y="50" width="40" height="7" rx="3" class="ts"/>
+              <!-- rows -->
+              <g>
+                <rect x="20" y="86" width="100" height="8" rx="3" class="ti"/><rect x="150" y="86" width="56" height="8" rx="3" class="ts"/><circle cx="352" cy="90" r="5" class="ts"/>
+                <rect x="20" y="112" width="88" height="8" rx="3" class="ti"/><rect x="150" y="112" width="70" height="8" rx="3" class="ts"/><circle cx="352" cy="116" r="5" class="taccent"/>
+                <rect x="20" y="138" width="106" height="8" rx="3" class="ti"/><rect x="150" y="138" width="48" height="8" rx="3" class="ts"/><circle cx="352" cy="142" r="5" class="ts"/>
+                <rect x="20" y="164" width="80" height="8" rx="3" class="ti"/><rect x="150" y="164" width="64" height="8" rx="3" class="ts"/><circle cx="352" cy="168" r="5" class="ts"/>
+                <rect x="20" y="190" width="96" height="8" rx="3" class="ti"/><rect x="150" y="190" width="52" height="8" rx="3" class="ts"/><circle cx="352" cy="194" r="5" class="ts"/>
+                <rect x="20" y="216" width="84" height="8" rx="3" class="ti"/><rect x="150" y="216" width="60" height="8" rx="3" class="ts"/><circle cx="352" cy="220" r="5" class="taccent"/>
+              </g>
+              <line x1="20" y1="106" x2="380" y2="106" class="tl2"/>
+              <line x1="20" y1="158" x2="380" y2="158" class="tl2"/>
+              <line x1="20" y1="210" x2="380" y2="210" class="tl2"/>
+              <!-- footer -->
+              <line x1="20" y1="240" x2="380" y2="240" class="tl"/>
+              <rect x="20" y="254" width="80" height="6" rx="3" class="ts"/>
+              <rect x="320" y="252" width="22" height="10" class="tcard"/>
+              <rect x="348" y="252" width="22" height="10" class="taccent"/>
+            </svg>
+            <figcaption class="tile__caption">
+              <strong>Tables &amp; dense data</strong>
+              <span>The hardest interfaces to get right. Clear header alignment, generous row rhythm,
+              status expressed through a small accent — plus the affordances real users need: filtering
+              and customizable columns. These patterns drive my current enterprise table redesign.</span>
+            </figcaption>
+          </figure>
+
+          <!-- Tile 3: Forms & modals -->
+          <figure class="tile glass-panelflat" data-reveal>
+            <svg viewBox="0 0 400 280" role="img" aria-label="Form and modal design mockup">
+              <title>Illustrative form and modal design mockup</title>
+              <rect x="0" y="0" width="400" height="280" class="tf"/>
+              <!-- dimmed background page -->
+              <rect x="20" y="20" width="120" height="12" rx="5" class="ts"/>
+              <rect x="20" y="44" width="360" height="216" class="tdim"/>
+              <!-- modal -->
+              <rect x="80" y="40" width="240" height="200" class="tcard2"/>
+              <rect x="100" y="60" width="90" height="9" rx="4" class="ti"/>
+              <rect x="100" y="84" width="200" height="26" rx="6" class="tinput"/>
+              <rect x="100" y="122" width="200" height="26" rx="6" class="tinput"/>
+              <!-- inline error -->
+              <rect x="100" y="160" width="200" height="26" rx="6" class="terror"/>
+              <rect x="100" y="192" width="120" height="6" rx="3" class="taccent"/>
+              <!-- footer buttons -->
+              <rect x="196" y="206" width="50" height="22" rx="6" class="tbtn"/>
+              <rect x="254" y="206" width="46" height="22" rx="6" class="taccent"/>
+            </svg>
+            <figcaption class="tile__caption">
+              <strong>Forms, modals &amp; validation</strong>
+              <span>Modals fail when they interrupt without helping. This pattern keeps destructive
+              actions deliberate, validates inline at the field level, and confirms with a message the
+              user can act on — the details that separate a usable enterprise form from a frustrating one.</span>
+            </figcaption>
+          </figure>
+
+          <!-- Tile 4: Navigation -->
+          <figure class="tile glass-panelflat" data-reveal>
+            <svg viewBox="0 0 400 280" role="img" aria-label="Navigation system mockup">
+              <title>Illustrative navigation and IA mockup</title>
+              <rect x="0" y="0" width="400" height="280" class="tf"/>
+              <!-- sidebar -->
+              <rect x="0" y="0" width="120" height="280" class="tsb"/>
+              <rect x="18" y="24" width="46" height="10" rx="4" class="ti"/>
+              <line x1="0" y1="48" x2="120" y2="48" class="tl"/>
+              <rect x="10" y="64" width="4" height="18" rx="2" class="taccent"/>
+              <rect x="24" y="68" width="56" height="8" rx="3" class="ti"/>
+              <rect x="24" y="92" width="48" height="8" rx="3" class="ts"/>
+              <rect x="24" y="116" width="54" height="8" rx="3" class="ts"/>
+              <rect x="24" y="140" width="44" height="8" rx="3" class="ts"/>
+              <rect x="24" y="172" width="52" height="8" rx="3" class="ts"/>
+              <rect x="24" y="196" width="40" height="8" rx="3" class="ts"/>
+              <line x1="0" y1="226" x2="120" y2="226" class="tl"/>
+              <circle cx="30" cy="250" r="9" class="ts2"/>
+              <rect x="46" y="246" width="40" height="7" rx="3" class="ts"/>
+              <!-- page -->
+              <rect x="150" y="24" width="150" height="8" rx="3" class="ts"/>
+              <rect x="222" y="22" width="154" height="10" rx="4" class="ti"/>
+              <line x1="150" y1="52" x2="376" y2="52" class="tl"/>
+              <!-- content cards -->
+              <rect x="150" y="70" width="106" height="90" rx="8" class="tcard"/>
+              <rect x="164" y="84" width="56" height="7" rx="3" class="ts"/>
+              <rect x="164" y="100" width="76" height="9" rx="4" class="ti"/>
+              <rect x="150" y="178" width="106" height="76" rx="8" class="tcard"/>
+              <rect x="164" y="192" width="56" height="7" rx="3" class="ts"/>
+              <rect x="164" y="208" width="70" height="9" rx="4" class="ti"/>
+              <rect x="272" y="70" width="104" height="184" rx="8" class="tcard"/>
+              <rect x="286" y="84" width="52" height="7" rx="3" class="ts"/>
+              <rect x="286" y="100" width="70" height="56" rx="4" class="taccent"/>
+            </svg>
+            <figcaption class="tile__caption">
+              <strong>Navigation &amp; information architecture</strong>
+              <span>Redesigning a sidebar taught me navigation is a hierarchy problem before it's a
+              visual one: what lives in the rail, what earns a section label, what state the active item
+              needs. This concept shows the grouping and active-state language I applied at work.</span>
+            </figcaption>
+          </figure>
+
+          <!-- Tile 5: Design system -->
+          <figure class="tile glass-panelflat" data-reveal>
+            <svg viewBox="0 0 400 280" role="img" aria-label="Design system components mockup">
+              <title>Illustrative design-system components mockup</title>
+              <rect x="0" y="0" width="400" height="280" class="tf"/>
+              <text x="24" y="44" class="tserif" font-size="34" fill="var(--ink)">Aa</text>
+              <rect x="86" y="22" width="90" height="7" rx="3" class="ti"/>
+              <rect x="86" y="36" width="120" height="6" rx="3" class="ts"/>
+              <rect x="86" y="49" width="76" height="6" rx="3" class="ts2"/>
+              <!-- palette -->
+              <rect x="24" y="78" width="42" height="42" rx="9" class="taccent"/>
+              <rect x="74" y="78" width="42" height="42" rx="9" class="tswatch1"/>
+              <rect x="124" y="78" width="42" height="42" rx="9" class="tswatch2"/>
+              <rect x="174" y="78" width="42" height="42" rx="9" class="tswatch3"/>
+              <rect x="224" y="78" width="42" height="42" rx="9" class="tcard"/>
+              <rect x="274" y="78" width="42" height="42" rx="9" class="tink"/>
+              <!-- components -->
+              <rect x="24" y="146" width="80" height="26" rx="7" class="tink"/>
+              <rect x="112" y="146" width="80" height="26" rx="7" class="tcard"/>
+              <rect x="200" y="146" width="80" height="26" rx="7" class="taccent"/>
+              <rect x="288" y="146" width="88" height="26" rx="7" class="tinput"/>
+              <!-- list item component -->
+              <rect x="24" y="192" width="352" height="64" rx="10" class="tcard"/>
+              <rect x="40" y="208" width="28" height="28" rx="14" class="taccent"/>
+              <rect x="82" y="210" width="90" height="8" rx="3" class="ti"/>
+              <rect x="82" y="226" width="130" height="6" rx="3" class="ts"/>
+              <rect x="300" y="214" width="60" height="20" rx="6" class="tfilter"/>
+            </svg>
+            <figcaption class="tile__caption">
+              <strong>Design system components</strong>
+              <span>A small system goes further than a large one: type at three sizes, six colors,
+              three button states, one list component — enough to keep every screen honest.
+              Consistency in structure is what makes redesigns possible later.</span>
+            </figcaption>
+          </figure>
+
+          <!-- Tile 6: Before / After -->
+          <figure class="tile tile--wide glass-panelflat" data-reveal>
+            <svg viewBox="0 0 560 300" role="img" aria-label="Before and after redesign comparison">
+              <title>Simplified before/after illustration of an enterprise redesign</title>
+              <rect x="0" y="0" width="560" height="300" class="tf"/>
+              <text x="30" y="42" class="tmono label">BEFORE</text>
+              <rect x="20" y="54" width="240" height="212" class="tdim2"/>
+              <!-- cluttered before: uneven columns, dense rows, lots of chips -->
+              <rect x="34" y="70" width="50" height="7" rx="3" class="ts"/>
+              <rect x="92" y="115" width="44" height="16" rx="8" class="ts2"/>
+              <rect x="140" y="115" width="44" height="16" rx="8" class="ts2"/>
+              <rect x="34" y="92" width="150" height="7" rx="3" class="ti"/>
+              <line x1="34" y1="112" x2="246" y2="112" class="tl"/>
+              <rect x="34" y="124" width="110" height="6" rx="3" class="ts"/>
+              <rect x="160" y="121" width="34" height="12" rx="6" class="ts2"/>
+              <rect x="200" y="121" width="34" height="12" rx="6" class="ts2"/>
+              <line x1="34" y1="146" x2="246" y2="146" class="tl"/>
+              <rect x="34" y="156" width="130" height="6" rx="3" class="ts"/>
+              <rect x="34" y="170" width="90" height="6" rx="3" class="ts2"/>
+              <rect x="34" y="184" width="120" height="6" rx="3" class="ts"/>
+              <rect x="34" y="198" width="70" height="6" rx="3" class="ts2"/>
+              <rect x="120" y="196" width="30" height="10" rx="5" class="ts2"/>
+              <rect x="156" y="196" width="30" height="10" rx="5" class="ts2"/>
+              <rect x="192" y="196" width="30" height="10" rx="5" class="ts2"/>
+              <rect x="34" y="222" width="180" height="6" rx="3" class="ts2"/>
+              <text x="310" y="42" class="tmono label">AFTER</text>
+              <rect x="300" y="54" width="240" height="212" fill="none" stroke="var(--line-strong)" stroke-width="1.5"/>
+              <!-- structured after -->
+              <rect x="316" y="70" width="90" height="7" rx="3" class="ti"/>
+              <rect x="316" y="92" width="208" height="20" rx="10" class="tcard"/>
+              <rect x="328" y="99" width="50" height="6" rx="3" class="ts"/>
+              <rect x="470" y="99" width="42" height="6" rx="3" class="taccent"/>
+              <line x1="316" y1="128" x2="524" y2="128" class="tl"/>
+              <rect x="316" y="140" width="70" height="6" rx="3" class="ti"/>
+              <rect x="440" y="138" width="84" height="6" rx="3" class="ts"/>
+              <rect x="316" y="162" width="66" height="6" rx="3" class="ti"/>
+              <rect x="440" y="160" width="72" height="6" rx="3" class="ts"/>
+              <line x1="316" y1="180" x2="524" y2="180" class="tl2"/>
+              <rect x="316" y="192" width="80" height="6" rx="3" class="ti"/>
+              <rect x="440" y="190" width="60" height="6" rx="3" class="ts"/>
+              <rect x="316" y="236" width="90" height="20" rx="7" class="tink"/>
+              <rect x="416" y="236" width="90" height="20" rx="7" class="tcard"/>
+              <line x1="270" y1="160" x2="288" y2="160" class="arrow"/>
+              <path d="M284 154l8 6-8 6" class="arrow"/>
+            </svg>
+            <figcaption class="tile__caption">
+              <strong>Before / after — enterprise redesign initiative</strong>
+              <span>A simplified, sanitized illustration of the kind of transformation in my current
+              professional work: from uneven, chip-cluttered screens to aligned columns, clear grouping,
+              and deliberate actions. Actual before/after source designs aren't shown for confidentiality.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span>04</span> — Capabilities</p>
+          <h2 class="section__title">A toolset with <em>an opinion.</em></h2>
+          <p class="section__intro">
+            Grouped by what I use them for, not ranked by imaginary percentages. Where text is
+            emphasized, it's the core of my day-to-day work — the rest is working knowledge I
+            reach for deliberately.
+          </p>
+        </header>
+
+        <div class="skill-rows">
+          <div class="skill-row" data-reveal>
+            <div class="skill-row__head">
+              <span class="skill-row__num">a</span>
+              <h3>Frontend engineering</h3>
+              <p>Interfaces that work everywhere, written to be maintained.</p>
+            </div>
+            <ul class="skill-row__list">
+              <li class="skill-item skill-item--core">TypeScript</li>
+              <li class="skill-item skill-item--core">JavaScript</li>
+              <li class="skill-item skill-item--core">React.js</li>
+              <li class="skill-item skill-item--core">Next.js</li>
+              <li class="skill-item skill-item--core">Redux Toolkit</li>
+              <li class="skill-item skill-item--core">RTK Query</li>
+              <li class="skill-item skill-item--core">Apollo Client</li>
+              <li class="skill-item skill-item--core">Tailwind CSS</li>
+              <li class="skill-item skill-item--core">HTML5</li>
+              <li class="skill-item skill-item--core">CSS3</li>
+              <li class="skill-item">shadcn/ui</li>
+              <li class="skill-item">Bootstrap</li>
+              <li class="skill-item">Material UI</li>
+              <li class="skill-item">jQuery</li>
+              <li class="skill-item">i18next</li>
+            </ul>
+          </div>
+
+          <div class="skill-row" data-reveal>
+            <div class="skill-row__head">
+              <span class="skill-row__num">b</span>
+              <h3>Backend development</h3>
+              <p>Enough of the other side to build the whole picture.</p>
+            </div>
+            <ul class="skill-row__list">
+              <li class="skill-item skill-item--core">Python</li>
+              <li class="skill-item skill-item--core">Django</li>
+              <li class="skill-item skill-item--core">Node.js</li>
+              <li class="skill-item skill-item--core">Express.js</li>
+              <li class="skill-item skill-item--core">REST APIs</li>
+              <li class="skill-item">NestJS</li>
+              <li class="skill-item">MongoDB</li>
+              <li class="skill-item">GraphQL</li>
+              <li class="skill-item">Django REST Framework</li>
+            </ul>
+          </div>
+
+          <div class="skill-row" data-reveal>
+            <div class="skill-row__head">
+              <span class="skill-row__num">c</span>
+              <h3>UI/UX &amp; design</h3>
+              <p>The process behind the pixels — research to finished screen.</p>
+            </div>
+            <ul class="skill-row__list">
+              <li class="skill-item skill-item--core">UI design</li>
+              <li class="skill-item skill-item--core">Responsive design</li>
+              <li class="skill-item skill-item--core">Figma</li>
+              <li class="skill-item">UX research</li>
+              <li class="skill-item">Wireframing</li>
+              <li class="skill-item">Prototyping</li>
+              <li class="skill-item">Design systems</li>
+              <li class="skill-item">Adobe Photoshop</li>
+              <li class="skill-item">Adobe Illustrator</li>
+              <li class="skill-item">Adobe XD</li>
+            </ul>
+          </div>
+
+          <div class="skill-row" data-reveal>
+            <div class="skill-row__head">
+              <span class="skill-row__num">d</span>
+              <h3>Tools &amp; foundations</h3>
+              <p>The quiet infrastructure of shipping.</p>
+            </div>
+            <ul class="skill-row__list">
+              <li class="skill-item skill-item--core">Git</li>
+              <li class="skill-item skill-item--core">GitHub</li>
+              <li class="skill-item skill-item--core">Browser DevTools</li>
+              <li class="skill-item">Postman</li>
+              <li class="skill-item">VS Code</li>
+              <li class="skill-item">GitHub Desktop</li>
+              <li class="skill-item skill-item--fine">OOP</li>
+              <li class="skill-item skill-item--fine">Data structures</li>
+              <li class="skill-item skill-item--fine">Algorithms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= JOURNEY ================= -->
+    <section class="section section--tinted" id="journey">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span>05</span> — Journey</p>
+          <h2 class="section__title">How I got <em>here.</em></h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl-item" data-reveal>
+            <div class="tl-item__period">Sept 2020</div>
+            <div class="tl-item__body">
+              <h3>Started engineering school</h3>
+              <p>Enrolled in Computers &amp; Systems Engineering at the Faculty of Engineering,
+              Mansoura University — where I picked up programming, systems thinking, and a taste
+              for problems with feedback built in.</p>
+            </div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <div class="tl-item__period">2020–2024</div>
+            <div class="tl-item__body">
+              <h3>Found my layer of the stack</h3>
+              <p>Coursework — web development, databases, data structures, algorithms, networks,
+              control systems — moved me from fundamentals to building real interfaces. Somewhere
+              along the way "making it work" turned into "making it well."</p>
+            </div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <div class="tl-item__period">2024–2025</div>
+            <div class="tl-item__body">
+              <h3>Graduation project — team lead</h3>
+              <p>Led my graduation project team: planning the work, organizing the development
+              workflow, and sharing responsibility for delivering something complete rather than
+              a pile of almost-features.</p>
+            </div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <div class="tl-item__period">July 2025</div>
+            <div class="tl-item__body">
+              <h3>Graduated</h3>
+              <p>B.Sc. in Computers &amp; Systems Engineering, Faculty of Engineering, Mansoura
+              University.</p>
+            </div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <div class="tl-item__period">2025</div>
+            <div class="tl-item__body">
+              <h3>Building independently</h3>
+              <p>Reelio — a team-built social platform where I led the frontend; AuthCore — a
+              full-stack authentication system; Focus-CRM — a Django application with live
+              demos; Kalima — a bilingual landing page. Each one targeted a gap in how I
+              understood products.</p>
+            </div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <div class="tl-item__period">2025 — present</div>
+            <div class="tl-item__body">
+              <h3>Professional software development</h3>
+              <p>Working on a real enterprise web application built with Django — redesigning
+              interfaces, implementing features, improving usability, and refactoring a legacy
+              jQuery/JavaScript codebase with care.</p>
+            </div>
+          </li>
+          <li class="tl-item" data-reveal>
+            <div class="tl-item__period">Continuously</div>
+            <div class="tl-item__body">
+              <h3>Still a student, deliberately</h3>
+              <p>Deepening TypeScript, design systems, and accessibility — and treating every
+              codebase I inherit as its own curriculum.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow"><span>06</span> — Contact</p>
+          <h2 class="section__title">Let's build something <em>considered.</em></h2>
+          <p class="section__intro">
+            I'm open to junior frontend and full-stack roles, internships, and collaboration on
+            products that deserve good design. If that sounds like your kind of project, I'd
+            genuinely enjoy hearing about it.
+          </p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__links" data-reveal>
+            <a class="big-mail" href="mailto:ahmedelmarghany01@gmail.com">ahmedelmarghany01@gmail.com<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+
+            <dl class="contact-list">
+              <div class="contact-list__row">
+                <dt>GitHub</dt>
+                <dd><a class="link-arrow" href="https://github.com/AhmedElmarghany" target="_blank" rel="noopener">github.com/AhmedElmarghany<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10 10 2M4 2h6v6"/></svg></a></dd>
+              </div>
+              <div class="contact-list__row">
+                <dt>LinkedIn</dt>
+                <dd><a class="link-arrow" href="https://www.linkedin.com/in/AhmedElmarghany" target="_blank" rel="noopener">linkedin.com/in/AhmedElmarghany<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10 10 2M4 2h6v6"/></svg></a></dd>
+              </div>
+              <div class="contact-list__row">
+                <dt>Phone</dt>
+                <dd><a class="link-arrow" href="tel:+201095496727">+20 109 549 6727</a></dd>
+              </div>
+              <div class="contact-list__row">
+                <dt>Curriculum vitae</dt>
+                <dd><a class="link-arrow" href="assets/Ahmed-Elmarghany-CV.pdf" download>Download PDF<svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 2v8m0 0 4-4m-4 4-4-4M2 2h12"/></svg></a></dd>
+              </div>
+            </dl>
+          </div>
+
+          <form class="form glass-panelflat" id="contactForm" data-reveal style="--d:.12s" novalidate>
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required placeholder="What are you working on?"></textarea>
+            </div>
+            <p class="form__note">
+              This form opens your email client with everything pre-filled — no data is sent
+              through this site.
+            </p>
+            <button class="btn btn--solid form__submit" type="submit">Compose email</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2025</span> Ahmed Elmarghany. Designed &amp; built by hand — plain HTML, CSS, and JavaScript.</p>
+      <a class="to-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
